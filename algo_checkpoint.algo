@@ -9,8 +9,7 @@ BEGIN
     write("Write the sentence")
     read(sent)
 
-    WHILE (sent[charac] <> ".") DO
-      charac = charac + 1;
+    REPEAT
 
       IF (sent[charac] = " ") THEN
       words := words + 1 ;
@@ -20,7 +19,9 @@ BEGIN
          voyelles := voyelles + 1;
       END_IF
 
-    END_WHILE
+      charac = charac + 1;
+      
+    UNTIL (sent[charac] = ".")
       
 END
 
