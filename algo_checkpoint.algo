@@ -1,0 +1,27 @@
+ALGORITHM read_sentence
+
+VAR
+    words, voyelles, charac : INTEGER := 0 ;
+    sent := STRING[] ;
+
+BEGIN
+
+    write("Write the sentence")
+    read(sent)
+
+    WHILE (sent[charac] <> ".") DO
+      charac = charac + 1;
+
+      IF (sent[charac] = " ") THEN
+      words := words + 1 ;
+      END_IF
+
+      IF (sent[charac] = ("a"||"e"||"u"||"i"||"o")) THEN
+         voyelles := voyelles + 1;
+      END_IF
+
+    END_WHILE
+      
+END
+
+//============================
