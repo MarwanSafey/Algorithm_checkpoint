@@ -22,7 +22,11 @@ BEGIN
       charac = charac + 1;
       
     UNTIL (sent[charac] = ".")
-      
+    
+    read(words)
+    read(charac)
+    read(voyelles)
+    
 END
 
 //============================
